@@ -60,22 +60,22 @@
 				?>
 				<div class="card-panel">
 
-				<ul class="collection">
-					<?php 
-					  foreach ($res as $r) {
-					    echo "
-					      <li class='collection-item'>
-					        <span class='title'>".$r['name']."</span>
-					        <input type='hidden' value='".$r['id']."'></input>
-					        <p>".$r['email']."</p>
-					        <a href='profile.php?id=".$r['id']."' class='btn blue'><i class='fas fa-eye' name='btn_ver' target='_blank'></i> Ver</a>
-					        <a href='#!' class='btn red' name='btn_delete'><i class='fas fa-trash-alt'></i> Eliminar</a>
-					      </li>
-					    ";
-					  }
-					?>
-				</ul>
-        </div>
+					<ul class="collection">
+						<?php 
+						  foreach ($res as $r) {
+						    echo "
+						      <li class='collection-item'>
+						        <span class='title'>".$r['name']."</span>
+						        <input type='hidden' value='".$r['id']."'></input>
+						        <p>".$r['email']."</p>
+						        <a href='profile.php?id=".$r['id']."' class='btn blue'><i class='fas fa-eye' name='btn_ver' target='_blank'></i> Ver</a>
+						        <a href='#!' class='btn red' name='btn_delete'><i class='fas fa-trash-alt'></i> Eliminar</a>
+						      </li>
+						    ";
+						  }
+						?>
+					</ul>
+        		</div>
 			</div>
 		</div>
 		<?php }else{

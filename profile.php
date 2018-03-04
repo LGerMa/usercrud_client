@@ -44,6 +44,7 @@
 </head>
 <body>
 	<div class="container">
+		<?php if($flag_token) {?>
 		<div class="row">
 			<div class="col s12">
 				<?php 
@@ -91,6 +92,14 @@
 				</div>
 			</div>
 		</div>
+		<?php }else{ 
+			echo "<h2>ERROR:  ".$statusCode."</h2><br>";
+			echo "<h3>".$res['error']."</h3><br>";
+			echo "<div class='row'>
+						
+				<a href='home.php' class='col s12 btn btn-large waves-effect green' id='btn_login'>Atrás</a>
+			</div>";
+		}?>
 	</div>
 </body>
 <?php 
